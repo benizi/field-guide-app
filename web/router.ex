@@ -1,5 +1,6 @@
 defmodule FieldGuide.Router do
   use FieldGuide.Web, :router
+  use Honeybadger.Plug
 
   pipeline :browser do
     plug :accepts, ["html"]
