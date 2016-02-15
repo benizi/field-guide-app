@@ -40,3 +40,6 @@ config :field_guide, FieldGuide.Repo,
   database: "field_guide_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :honeybadger,
+  environment_name: "dev"
