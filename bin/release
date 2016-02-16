@@ -5,3 +5,6 @@ curl -g 'https://api.honeybadger.io/v1/deploys' \
   -d 'deploy[revision]=@'"$1/deploy.version" \
   -d 'deploy[repository]=https://github.com/benizi/field-guide-app.git' \
   -d 'api_key='$HONEYBADGER_API_KEY >&2
+
+# empty YAML file
+printf -- '---\n'
