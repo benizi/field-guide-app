@@ -5,4 +5,4 @@ arrow() {
   printf -- '-----> %s\n' "$*"
 }
 arrow Saving build version
-printf '%s' "$SOURCE_VERSION" > "$1/deploy.version"
+printf 'deploy[revision]=%s' "$SOURCE_VERSION" > "$1/deploy.param"
