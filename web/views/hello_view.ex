@@ -9,7 +9,7 @@ defmodule FieldGuide.HelloView do
 
   def greeting_for(user) do
     if Map.has_key?(@politicians, user) do
-      raise "Politician detected"
+      "Oh no! #{user} is here!"
     else
       "Hooray, #{user} is here!"
     end
